@@ -492,12 +492,12 @@ Before changing any existing code:
 
 ### 11.2 Test Files
 - **MANDATORY LOCATION**: All test files MUST be in `/tests` directory
-- **NAMING CONVENTION**: `test_[feature_name].php` or `[Feature]Test.php`
+- **NAMING CONVENTION**: Follow project conventions (e.g., `test_[feature].ext`, `[Feature]Test.ext`, `test_[feature]_[language].ext`)
 - **LIFECYCLE**:
   1. **Create** test in `/tests` directory
   2. **Execute** test to validate functionality
   3. **Document** results (pass/fail)
-  4. **Delete** test file after successful validation
+  4. **Delete** temporary test file after successful validation
   5. **Keep** only permanent test suites (integration, unit tests)
 
 **Test File Rules:**
@@ -522,12 +522,12 @@ Before changing any existing code:
 - `CLAUDE.md` - Claude-specific instructions (if exists)
 - `.env` - Environment configuration
 - `.gitignore` - Git ignore rules
-- `.htaccess` - Apache configuration
-- `index.php` - Application entry point
-- `composer.json` / `package.json` - Dependency management
+- `.htaccess` - Apache configuration (if applicable)
+- Entry point file (e.g., `index.php`, `index.js`, `main.py`, `app.js`)
+- Dependency files (e.g., `composer.json`, `package.json`, `requirements.txt`, `Cargo.toml`)
 
 **FORBIDDEN in project root:**
-- Test files (`test_*.php`, `*_test.php`)
+- Test files (`test_*.*`, `*_test.*`)
 - Documentation files (except README.md, AGENTS.md, CLAUDE.md)
 - Temporary files
 - Backup files
