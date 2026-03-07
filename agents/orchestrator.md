@@ -27,6 +27,7 @@ Use the Task tool to invoke appropriate subagents:
 - frontend-dev - for React, Next.js, and UI/UX
 - code-review - for code quality and best practices
 - security-analyst - for pentesting and vulnerability analysis
+- researcher - for web research, documentation lookup, and information gathering
 
 ### 4. Coordinate Results
 - Synthesize outputs from all specialists
