@@ -1,0 +1,155 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "orchestrator": {
+      "description": "Coordinates complex tasks and delegates to specialist agents",
+      "mode": "primary",
+      "prompt": "{file:agent/orchestrator.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      },
+      "permission": {
+        "task": {
+          "*": "allow"
+        }
+      }
+    },
+    "backend-engineer": {
+      "description": "Backend engineer: APIs, databases, microservices, distributed systems",
+      "mode": "all",
+      "prompt": "{file:agent/backend-engineer.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
+    },
+    "frontend-dev": {
+      "description": "Frontend developer: web apps, performance, accessibility, UX",
+      "mode": "all",
+      "prompt": "{file:agent/frontend-dev.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
+    },
+    "api-specialist": {
+      "description": "API architect: REST, GraphQL, gRPC, API-first design",
+      "mode": "all",
+      "prompt": "{file:agent/api-specialist.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
+    },
+    "security-analyst": {
+      "description": "Offensive security analyst: red team, vulnerabilities, attack vectors",
+      "mode": "all",
+      "prompt": "{file:agent/security-analyst.md}",
+      "instructions": [
+        "GUIDELINES.md"
+      ],
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": true
+      }
+    },
+    "code-review": {
+      "description": "Code review focused on security, best practices and quality",
+      "mode": "all",
+      "prompt": "{file:agent/code-review.md}",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": true
+      }
+    },
+    "debugger": {
+      "description": "Debugging specialist: root cause analysis, logs, stack traces, profiling",
+      "mode": "all",
+      "prompt": "{file:agent/debugger.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
+    },
+    "test-runner": {
+      "description": "Automated testing specialist: creation, execution and management",
+      "mode": "all",
+      "prompt": "{file:agent/test-runner.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
+    },
+    "documentation-writer": {
+      "description": "Technical writer: clear, comprehensive and maintainable documentation",
+      "mode": "all",
+      "prompt": "{file:agent/documentation-writer.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": false
+      }
+    },
+    "researcher": {
+      "description": "Web researcher: searches the internet, navigates websites, extracts content and saves findings",
+      "mode": "all",
+      "prompt": "{file:agent/researcher.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": false,
+        "playwright*": true,
+        "fetch*": true,
+        "memory*": true
+      }
+    }
+  },
+  "mcpServers": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ],
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": [
+        "npx",
+        "@playwright/mcp@latest",
+        "--headless",
+        "--browser",
+        "chromium"
+      ],
+      "enabled": false
+    },
+    "memory": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "enabled": true
+    },
+    "fetch": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-fetch"
+      ],
+      "enabled": false
+    }
+  }
+}
