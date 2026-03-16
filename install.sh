@@ -62,14 +62,14 @@ merge_json() {
 
     # Deep merge:
     # - agent:      ADDS new agents, does NOT overwrite existing ones with the same name
-    # - mcpServers: ADDS new MCPs, does NOT overwrite existing ones with the same name
+    # - mcp:        ADDS new MCPs, does NOT overwrite existing ones with the same name
     # - Everything else: UNTOUCHED (apiKeys, provider, model, etc.)
     jq -s '
       .[0] as $user |
       .[1] as $pack |
       $user * {
         "agent": (($user.agent // {}) * $pack.agent),
-        "mcpServers": (($user.mcpServers // {}) * $pack.mcpServers)
+        "mcp": (($user.mcp // {}) * $pack.mcp)
       }
     ' "$USER_JSON" "$PACK_JSON" > "$USER_JSON.tmp"
 
