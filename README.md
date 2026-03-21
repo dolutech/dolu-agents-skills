@@ -63,6 +63,9 @@ Este projeto fornece especialistas virtuais para diferentes domínios do desenvo
 | **test-runner** 🧪 | Testes | Automated testing: criação, execução e gerenciamento |
 | **documentation-writer** 📝 | Documentação | Technical writer: documentação clara e manutenível |
 | **researcher** 🔍 | Pesquisa | Web researcher: busca, navegação, extração de conteúdo |
+| **deploy-specialist** 🚀 | **NOVO** | CI/CD, deployments, Kubernetes, Docker, automação de infraestrutura |
+| **web-server-setup** 🌐 | **NOVO** | Nginx, Apache, Traefik, Caddy, SSL/TLS, load balancing |
+| **server-management** 🖥️ | **NOVO** | Administração de servidores Linux, hardening, monitoramento, backups |
 
 ### Como Escolher o Agente Certo
 
@@ -95,6 +98,9 @@ Pesquisa na Web?              → researcher
 | **frontend-design** 🎨 | Para criar interfaces frontend de alta qualidade |
 | **skill-creator** 🛠️ | Quando quer criar ou atualizar skills |
 | **stripe-best-practices** 💳 | Para integrações com Stripe |
+| **deploy-automation** 🚀 | **NOVO** | Workflows e melhores práticas para CI/CD, estratégias de deploy e releases |
+| **server-hardening** 🔒 | **NOVO** | Hardening de servidores baseado em CIS Benchmarks e segurança |
+| **webserver-configuration** 🌐 | **NOVO** | Configuração completa de web servers (Nginx, Apache, Traefik, Caddy) |
 
 ### Fluxo Recomendado de Skills
 

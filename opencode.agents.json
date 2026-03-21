@@ -111,6 +111,36 @@
         "fetch*": true,
         "memory*": true
       }
+    },
+    "deploy-specialist": {
+      "description": "DevOps specialist: CI/CD, deployments, Kubernetes, Docker, infrastructure automation",
+      "mode": "all",
+      "prompt": "{file:agent/deploy-specialist.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
+    },
+    "web-server-setup": {
+      "description": "Web server specialist: Nginx, Apache, Traefik, Caddy, SSL/TLS, load balancing",
+      "mode": "all",
+      "prompt": "{file:agent/web-server-setup.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
+    },
+    "server-management": {
+      "description": "System administrator: Linux servers, security hardening, monitoring, backups",
+      "mode": "all",
+      "prompt": "{file:agent/server-management.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
     }
   },
   "mcp": {
