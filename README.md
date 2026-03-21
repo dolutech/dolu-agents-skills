@@ -21,9 +21,9 @@ Transforme seu OpenCode em uma equipe de especialistas virtuais
 
 ## 📖 Sobre o Projeto
 
-**Dolu Agents & Skills** é uma coleção curada de **10 agentes especialistas** e **10 skills** projetadas para funcionarem com [OpenCode](https://github.com/sst/opencode), o assistente de IA para desenvolvimento de software.
+**Dolu Agents & Skills** é uma coleção curada de **13 agentes especialistas** e **13 skills** projetadas para funcionarem com [OpenCode](https://github.com/sst/opencode), o assistente de IA para desenvolvimento de software.
 
-Este projeto fornece especialistas virtuais para diferentes domínios do desenvolvimento de software, desde arquitetura de backend até análise de segurança, passando por debugging sistemático e documentação técnica.
+Este projeto fornece especialistas virtuais para diferentes domínios do desenvolvimento de software, desde arquitetura de backend até análise de segurança, passando por debugging sistemático e documentação técnica, e agora incluindo especialistas em DevOps para deploy, web servers e gestão de servidores.
 
 ### 🎯 Por que usar?
 
@@ -39,8 +39,8 @@ Este projeto fornece especialistas virtuais para diferentes domínios do desenvo
 
 | Feature | Descrição |
 |---------|-----------|
-| 🤖 **10 Agentes Especialistas** | Cada um com expertise profunda em um domínio específico |
-| 🛠️ **10 Skills** | Workflows e processos estruturados para tarefas complexas |
+| 🤖 **13 Agentes Especialistas** | Cada um com expertise profunda em um domínio específico |
+| 🛠️ **13 Skills** | Workflows e processos estruturados para tarefas complexas |
 | 🔒 **Foco em Segurança** | Práticas de segurança integradas em todos os agentes |
 | 📦 **Instalação Fácil** | Script de instalação com merge seguro (preserva suas configs) |
 | 🗑️ **Desinstalação Limpa** | Remove todos os arquivos sem afetar configurações existentes |
@@ -80,6 +80,9 @@ Documentação?                 → documentation-writer
 Code Review?                  → code-review
 Design de API?                → api-specialist
 Pesquisa na Web?              → researcher
+Deploy/CI/CD?                 → deploy-specialist
+Web Server/SSL?               → web-server-setup
+Hardening/Servidores?         → server-management
 ```
 
 ---
@@ -116,6 +119,12 @@ Code Review:
 
 Frontend:
   frontend-design → [implementar] → verification-before-completion
+
+Deploy:
+  deploy-automation → [setup CI/CD] → verification-before-completion
+
+Hardening:
+  server-hardening → [security audit] → verification-before-completion
 ```
 
 ---
@@ -478,7 +487,7 @@ Made with ❤️ by **Lucas Catão de Moraes** | [Dolutech](https://dolutech.com
 
 ---
 
-## 🇺🇸 English Version
+## 🇺🇸 English Version {#-english}
 
 <div align="center">
 
@@ -499,9 +508,9 @@ Transform your OpenCode into a team of virtual specialists
 
 ## 📖 About
 
-**Dolu Agents & Skills** is a curated collection of **10 specialist agents** and **10 skills** designed to work with [OpenCode](https://github.com/sst/opencode), the AI assistant for software development.
+**Dolu Agents & Skills** is a curated collection of **13 specialist agents** and **13 skills** designed to work with [OpenCode](https://github.com/sst/opencode), the AI assistant for software development.
 
-This project provides virtual specialists for different software development domains, from backend architecture to security analysis, through systematic debugging and technical documentation.
+This project provides virtual specialists for different software development domains, from backend architecture to security analysis, through systematic debugging and technical documentation, and now including DevOps specialists for deployment, web servers, and server management.
 
 ### 🎯 Why Use?
 
@@ -517,8 +526,8 @@ This project provides virtual specialists for different software development dom
 
 | Feature | Description |
 |---------|-----------|
-| 🤖 **10 Specialist Agents** | Each with deep expertise in a specific domain |
-| 🛠️ **10 Skills** | Structured workflows and processes for complex tasks |
+| 🤖 **13 Specialist Agents** | Each with deep expertise in a specific domain |
+| 🛠️ **13 Skills** | Structured workflows and processes for complex tasks |
 | 🔒 **Security Focus** | Security practices integrated in all agents |
 | 📦 **Easy Installation** | Installation script with safe merge (preserves your configs) |
 | 🗑️ **Clean Uninstall** | Removes all files without affecting existing settings |
@@ -541,6 +550,9 @@ This project provides virtual specialists for different software development dom
 | **test-runner** 🧪 | Testing | Automated testing: creation, execution, management |
 | **documentation-writer** 📝 | Documentation | Technical writer: clear, maintainable documentation |
 | **researcher** 🔍 | Research | Web researcher: search, navigation, content extraction |
+| **deploy-specialist** 🚀 | **NEW** | CI/CD, deployments, Kubernetes, Docker, infrastructure automation |
+| **web-server-setup** 🌐 | **NEW** | Nginx, Apache, Traefik, Caddy, SSL/TLS, load balancing |
+| **server-management** 🖥️ | **NEW** | Linux server administration, hardening, monitoring, backups |
 
 ### How to Choose the Right Agent
 
@@ -555,6 +567,9 @@ Documentation?             → documentation-writer
 Code Review?               → code-review
 API Design?                → api-specialist
 Web Research?              → researcher
+Deploy/CI/CD?              → deploy-specialist
+Web Server/SSL?            → web-server-setup
+Hardening/Servers?         → server-management
 ```
 
 ---
@@ -573,6 +588,9 @@ Web Research?              → researcher
 | **frontend-design** 🎨 | For creating high-quality frontend interfaces |
 | **skill-creator** 🛠️ | When you want to create or update skills |
 | **stripe-best-practices** 💳 | For Stripe integrations |
+| **deploy-automation** 🚀 | **NEW** | Workflows and best practices for CI/CD, deployment strategies, releases |
+| **server-hardening** 🔒 | **NEW** | Server hardening based on CIS Benchmarks and security |
+| **webserver-configuration** 🌐 | **NEW** | Complete web server configuration (Nginx, Apache, Traefik, Caddy) |
 
 ### Recommended Skills Flow
 
@@ -588,6 +606,12 @@ Code Review:
 
 Frontend:
   frontend-design → [implement] → verification-before-completion
+
+Deploy:
+  deploy-automation → [setup CI/CD] → verification-before-completion
+
+Hardening:
+  server-hardening → [security audit] → verification-before-completion
 ```
 
 ---
