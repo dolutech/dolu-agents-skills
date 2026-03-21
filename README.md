@@ -9,7 +9,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-red.svg)](https://dolutech.com)
 
-**[ Português ](README.md) | [ English ](#-english)**
+**[ Português ](README.md) | [ English ](#english-section)**
 
 ---
 
@@ -230,38 +230,48 @@ O script de desinstalação:
 
 ```
 dolu-agents-skills/
-├── 📁 agents/                    # Definições dos agentes especialistas
-│   ├── orchestrator.md          # Coordenador de tarefas complexas
-│   ├── backend-engineer.md      # Especialista em backend
-│   ├── frontend-dev.md          # Especialista em frontend
-│   ├── api-specialist.md        # Arquiteto de APIs
-│   ├── security-analyst.md      # Analista de segurança ofensiva
-│   ├── code-review.md           # Revisor de código
-│   ├── debugger.md              # Especialista em debugging
-│   ├── test-runner.md           # Especialista em testes
-│   ├── documentation-writer.md  # Escritor técnico
-│   └── researcher.md            # Pesquisador web
+├── 📁 agents/                        # Definições dos agentes especialistas (13 agentes)
+│   ├── orchestrator.md              # Coordenador de tarefas complexas
+│   ├── backend-engineer.md          # Especialista em backend
+│   ├── frontend-dev.md              # Especialista em frontend
+│   ├── api-specialist.md            # Arquiteto de APIs
+│   ├── security-analyst.md          # Analista de segurança ofensiva
+│   ├── code-review.md               # Revisor de código
+│   ├── debugger.md                  # Especialista em debugging
+│   ├── test-runner.md               # Especialista em testes
+│   ├── documentation-writer.md      # Escritor técnico
+│   ├── researcher.md                # Pesquisador web
+│   ├── deploy-specialist.md         # NOVO - Especialista em CI/CD e deployments
+│   ├── web-server-setup.md          # NOVO - Especialista em web servers
+│   └── server-management.md         # NOVO - Especialista em gestão de servidores
 │
-├── 📁 skills/                    # Skills especializadas
-│   ├── brainstorming/           # Exploração de ideias
-│   ├── executing-plans/         # Execução de planos
-│   ├── writing-plans/           # Criação de planos
-│   ├── requesting-code-review/  # Solicitar code review
-│   ├── receiving-code-review/   # Receber code review
-│   ├── skill-creator/           # Criador de skills
-│   ├── stripe-best-practices/   # Integrações Stripe
-│   ├── systematic-debugging/    # Debugging sistemático
-│   ├── frontend-design/         # Design de interfaces
-│   └── verification-before-completion/  # Verificação pré-entrega
+├── 📁 skills/                        # Skills especializadas (13 skills)
+│   ├── brainstorming/               # Exploração de ideias
+│   ├── executing-plans/             # Execução de planos
+│   ├── writing-plans/               # Criação de planos
+│   ├── requesting-code-review/      # Solicitar code review
+│   ├── receiving-code-review/       # Receber code review
+│   ├── skill-creator/               # Criador de skills
+│   ├── stripe-best-practices/       # Integrações Stripe
+│   ├── systematic-debugging/        # Debugging sistemático
+│   ├── frontend-design/             # Design de interfaces
+│   ├── verification-before-completion/  # Verificação pré-entrega
+│   ├── deploy-automation/           # NOVO - Automação de CI/CD e deployments
+│   ├── server-hardening/            # NOVO - Hardening de servidores
+│   └── webserver-configuration/     # NOVO - Configuração de web servers
 │
-├── 📄 opencode.agents.json       # Configuração dos agentes e MCPs
-├── 📄 AGENTS.md                  # Regras operacionais para IA
-├── 📄 GUIDELINES.md              # Diretrizes de segurança e desenvolvimento
-├── 🔧 install.sh                 # Script de instalação
-├── 🔧 uninstall.sh               # Script de desinstalação
-├── 📖 README.md                  # Este arquivo
-├── 📖 CONTRIBUTING.md            # Guia de contribuição
-└── ⚖️ LICENSE                    # Licença MIT
+├── 📁 docs/                          # Documentação técnica
+│   ├── DEVOPS_AGENTS.md             # Documentação dos agentes DevOps
+│   └── MCP_SERVERS_FIX.md           # Guia de MCP servers
+│
+├── 📄 opencode.agents.json           # Configuração dos agentes e MCPs
+├── 📄 AGENTS.md                      # Regras operacionais para IA
+├── 📄 GUIDELINES.md                  # Diretrizes de segurança e desenvolvimento
+├── 🔧 install.sh                     # Script de instalação
+├── 🔧 uninstall.sh                   # Script de desinstalação
+├── 📖 README.md                      # Este arquivo
+├── 📖 CONTRIBUTING.md                # Guia de contribuição
+└── ⚖️ LICENSE                        # Licença MIT
 ```
 
 ---
@@ -332,6 +342,51 @@ Você: "Quero adicionar autenticação OAuth2"
    
 6. ✅ verification-before-completion skill
    → Verifica tudo antes de claimar completo
+```
+
+### Exemplo 5: Usando o Deploy Specialist
+
+```
+Você: "Configure um pipeline CI/CD para minha aplicação"
+
+Deploy Specialist vai:
+1. 📋 Analisar requisitos da aplicação
+2. ⚙️ Escolher plataforma (GitHub Actions, GitLab CI, Jenkins)
+3. 🧪 Configurar testes automatizados
+4. 🔐 Adicionar security scanning (SAST, SCA)
+5. 🚀 Implementar estratégia de deploy (rolling, canary)
+6. 🔁 Configurar rollback automático
+7. 📊 Adicionar monitoring e notifications
+```
+
+### Exemplo 6: Usando o Web Server Setup
+
+```
+Você: "Configure Nginx com SSL para minha API"
+
+Web Server Setup vai:
+1. 🔧 Instalar e configurar Nginx
+2. 🔒 Obter certificado SSL (Let's Encrypt)
+3. ⚙️ Configurar reverse proxy
+4. 🛡️ Adicionar security headers
+5. ⚡ Otimizar performance (gzip, caching)
+6. 📊 Configurar logging e monitoring
+7. ✅ Testar configuração
+```
+
+### Exemplo 7: Usando o Server Management
+
+```
+Você: "Hardenize meu servidor Ubuntu para produção"
+
+Server Management vai:
+1. 📋 Avaliar configuração atual
+2. 🔒 Aplicar CIS Benchmarks
+3. 🛡️ Configurar firewall (UFW)
+4. 🔐 Hardening do SSH
+5. 📊 Instalar monitoring (Prometheus, Grafana)
+6. 💾 Configurar backups automatizados
+7. 🔍 Instalar intrusion detection (Fail2ban)
 ```
 
 ---
@@ -405,15 +460,43 @@ git push origin feature/minha-feature
 
 ## 📈 Roadmap
 
-### v1.1 (Planejado)
-- [ ] Adicionar mais skills especializadas
-- [ ] Suporte a múltiplos idiomas
-- [ ] Templates de projetos
+### ✅ v1.1 (Dezembro 2024) - DevOps & Infrastructure
+- [x] Deploy Specialist Agent (CI/CD, Kubernetes, Docker)
+- [x] Web Server Setup Agent (Nginx, Apache, Traefik, Caddy)
+- [x] Server Management Agent (Linux, hardening, monitoring)
+- [x] Deploy Automation Skill
+- [x] Server Hardening Skill
+- [x] Web Server Configuration Skill
+- [x] Complete documentation in PT/EN
 
-### v1.2 (Futuro)
-- [ ] Agentes para DevOps
-- [ ] Skills para cloud providers (AWS, GCP, Azure)
-- [ ] Integração com mais MCPs
+### 🔜 v1.2 (Q1 2025) - Cloud & Advanced Features
+- [ ] AWS Specialist Agent
+- [ ] GCP Specialist Agent
+- [ ] Azure Specialist Agent
+- [ ] Cloud Infrastructure Skills
+- [ ] Terraform/CloudFormation patterns
+- [ ] Kubernetes advanced patterns
+
+### 🔜 v1.3 (Q2 2025) - Database & Performance
+- [ ] Database Specialist Agent (PostgreSQL, MySQL, MongoDB)
+- [ ] Performance Optimization Agent
+- [ ] Database migration skills
+- [ ] Query optimization patterns
+- [ ] Caching strategies
+
+### 🔜 v1.4 (Q3 2025) - Monitoring & Observability
+- [ ] Monitoring Specialist Agent
+- [ ] Observability patterns
+- [ ] Logging best practices
+- [ ] Alerting strategies
+- [ ] Dashboard templates
+
+### 🔮 Future (2025+)
+- [ ] Multi-language support (ES, FR, DE)
+- [ ] Project templates
+- [ ] Integration with more MCPs
+- [ ] AI-powered code suggestions
+- [ ] Custom agent creation tool
 
 ---
 
@@ -487,7 +570,131 @@ Made with ❤️ by **Lucas Catão de Moraes** | [Dolutech](https://dolutech.com
 
 ---
 
-## 🇺🇸 English Version {#-english}
+## 🆕 Novos Agentes e Skills DevOps (v1.1)
+
+Acabamos de adicionar **3 novos agentes especialistas em DevOps** e **3 novas skills** para automação de infraestrutura!
+
+### 🚀 Novo: Deploy Specialist Agent
+
+**Especialidade:** CI/CD, deployments, Kubernetes, Docker e automação de infraestrutura
+
+**O que faz:**
+- Configura pipelines de CI/CD (GitHub Actions, GitLab CI, Jenkins)
+- Implementa estratégias de deploy (rolling, blue-green, canary)
+- Cria procedimentos de rollback automático
+- Gerencia ambientes múltiplos (dev, staging, production)
+- Automatiza migrações de banco de dados
+- Implementa GitOps com ArgoCD
+
+**Quando usar:**
+- "Configure um pipeline CI/CD para minha aplicação Node.js"
+- "Implemente blue-green deployment no Kubernetes"
+- "Crie uma estratégia de canary deployment com rollback automático"
+- "Configure GitOps com ArgoCD"
+
+**Skill associada:** `deploy-automation`
+
+---
+
+### 🌐 Novo: Web Server Setup Agent
+
+**Especialidade:** Nginx, Apache, Traefik, Caddy, SSL/TLS e load balancing
+
+**O que faz:**
+- Instala e configura web servers (Nginx, Apache, Traefik, Caddy)
+- Configura certificados SSL/TLS (Let's Encrypt, Certbot)
+- Implementa reverse proxy e load balancing
+- Otimiza performance (HTTP/2, HTTP/3, caching, compressão)
+- Adiciona security headers
+- Configura virtual hosts
+
+**Quando usar:**
+- "Configure Nginx como reverse proxy com SSL"
+- "Implemente load balancing entre 3 servidores backend"
+- "Configure certificados SSL automáticos com Let's Encrypt"
+- "Otimize Nginx para aplicações de alto tráfego"
+- "Configure Traefik com Docker e HTTPS automático"
+
+**Skill associada:** `webserver-configuration`
+
+---
+
+### 🖥️ Novo: Server Management Agent
+
+**Especialidade:** Administração de servidores Linux, security hardening, monitoramento e backups
+
+**O que faz:**
+- Hardening de servidores baseado em CIS Benchmarks
+- Configura firewall (UFW, iptables)
+- Implementa SSH hardening
+- Configura monitoring (Prometheus, Grafana, Netdata)
+- Cria estratégias de backup (BorgBackup, Restic)
+- Otimiza performance do sistema
+- Configura intrusion detection (Fail2ban)
+
+**Quando usar:**
+- "Hardenize meu servidor Ubuntu seguindo CIS Benchmarks"
+- "Configure Prometheus e Grafana para monitoramento"
+- "Crie uma estratégia completa de backup"
+- "Configure Fail2ban e detecção de intrusão"
+- "Otimize parâmetros do kernel Linux para performance"
+
+**Skill associada:** `server-hardening`
+
+---
+
+### 🛠️ Novas Skills DevOps
+
+#### Deploy Automation
+**Para que serve:** Workflows completos para CI/CD, estratégias de deploy e releases em produção
+
+**Inclui:**
+- Padrões de CI/CD (GitHub Actions, GitLab CI, Jenkins)
+- Estratégias de deployment (rolling, blue-green, canary)
+- Procedimentos de rollback
+- Migrações de banco de dados seguras
+- Feature flags
+
+**Quando usar:**
+- "Use a skill deploy-automation para criar um pipeline CI/CD"
+- "Implemente canary deployment com a skill deploy-automation"
+
+---
+
+#### Server Hardening
+**Para que serve:** Hardening completo de servidores baseado em CIS Benchmarks
+
+**Inclui:**
+- Scripts de hardening automatizado
+- CIS Benchmarks implementation guide
+- Security checklist completa
+- Configuração de audit logging
+- Monitoramento de segurança
+
+**Quando usar:**
+- "Use a skill server-hardening para proteger meu servidor"
+- "Implemente CIS Benchmarks com a skill server-hardening"
+
+---
+
+#### Web Server Configuration
+**Para que serve:** Configuração completa de web servers
+
+**Inclui:**
+- Configurações de Nginx para produção
+- Configurações de Apache e virtual hosts
+- Setup de Traefik e Caddy
+- SSL/TLS configuration guide
+- Performance tuning
+
+**Quando usar:**
+- "Use a skill webserver-configuration para configurar Nginx"
+- "Configure SSL/TLS com a skill webserver-configuration"
+
+---
+
+<a id="english-section"></a>
+## 🇺🇸 English Version
 
 <div align="center">
 
@@ -791,6 +998,129 @@ You: "I want to add OAuth2 authentication"
 | **playwright** | ⚪ Optional | Browser automation for E2E tests |
 | **memory** | ✅ Enabled | Persistent memory between sessions |
 | **fetch** | ⚪ Optional | URL fetching for research |
+
+---
+
+## 🆕 New DevOps Agents & Skills (v1.1)
+
+We've just added **3 new DevOps specialist agents** and **3 new skills** for infrastructure automation!
+
+### 🚀 New: Deploy Specialist Agent
+
+**Specialty:** CI/CD, deployments, Kubernetes, Docker, and infrastructure automation
+
+**What it does:**
+- Sets up CI/CD pipelines (GitHub Actions, GitLab CI, Jenkins)
+- Implements deployment strategies (rolling, blue-green, canary)
+- Creates automatic rollback procedures
+- Manages multiple environments (dev, staging, production)
+- Automates database migrations
+- Implements GitOps with ArgoCD
+
+**When to use:**
+- "Set up a CI/CD pipeline for my Node.js application"
+- "Implement blue-green deployment on Kubernetes"
+- "Create a canary deployment strategy with automatic rollback"
+- "Configure GitOps with ArgoCD"
+
+**Associated Skill:** `deploy-automation`
+
+---
+
+### 🌐 New: Web Server Setup Agent
+
+**Specialty:** Nginx, Apache, Traefik, Caddy, SSL/TLS, and load balancing
+
+**What it does:**
+- Installs and configures web servers (Nginx, Apache, Traefik, Caddy)
+- Configures SSL/TLS certificates (Let's Encrypt, Certbot)
+- Implements reverse proxy and load balancing
+- Optimizes performance (HTTP/2, HTTP/3, caching, compression)
+- Adds security headers
+- Configures virtual hosts
+
+**When to use:**
+- "Configure Nginx as a reverse proxy with SSL"
+- "Set up load balancing across 3 backend servers"
+- "Configure automatic SSL certificates with Let's Encrypt"
+- "Optimize Nginx for high-traffic applications"
+- "Set up Traefik with Docker and automatic HTTPS"
+
+**Associated Skill:** `webserver-configuration`
+
+---
+
+### 🖥️ New: Server Management Agent
+
+**Specialty:** Linux server administration, security hardening, monitoring, and backups
+
+**What it does:**
+- Hardens servers based on CIS Benchmarks
+- Configures firewalls (UFW, iptables)
+- Implements SSH hardening
+- Sets up monitoring (Prometheus, Grafana, Netdata)
+- Creates backup strategies (BorgBackup, Restic)
+- Optimizes system performance
+- Configures intrusion detection (Fail2ban)
+
+**When to use:**
+- "Harden my Ubuntu server following CIS Benchmarks"
+- "Set up Prometheus and Grafana monitoring"
+- "Create a comprehensive backup strategy"
+- "Configure Fail2ban and intrusion detection"
+- "Optimize Linux kernel parameters for performance"
+
+**Associated Skill:** `server-hardening`
+
+---
+
+### 🛠️ New DevOps Skills
+
+#### Deploy Automation
+**Purpose:** Complete workflows for CI/CD, deployment strategies, and production releases
+
+**Includes:**
+- CI/CD pipeline patterns (GitHub Actions, GitLab CI, Jenkins)
+- Deployment strategies (rolling, blue-green, canary)
+- Rollback procedures
+- Safe database migrations
+- Feature flags
+
+**When to use:**
+- "Use deploy-automation skill to create a CI/CD pipeline"
+- "Implement canary deployment with deploy-automation skill"
+
+---
+
+#### Server Hardening
+**Purpose:** Complete server hardening based on CIS Benchmarks
+
+**Includes:**
+- Automated hardening scripts
+- CIS Benchmarks implementation guide
+- Complete security checklist
+- Audit logging configuration
+- Security monitoring
+
+**When to use:**
+- "Use server-hardening skill to secure my server"
+- "Implement CIS Benchmarks with server-hardening skill"
+
+---
+
+#### Web Server Configuration
+**Purpose:** Complete web server configuration
+
+**Includes:**
+- Production Nginx configurations
+- Apache and virtual hosts configurations
+- Traefik and Caddy setup
+- SSL/TLS configuration guide
+- Performance tuning
+
+**When to use:**
+- "Use webserver-configuration skill to configure Nginx"
+- "Configure SSL/TLS with webserver-configuration skill"
 
 ---
 

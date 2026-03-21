@@ -95,7 +95,8 @@ install_agents() {
         cp "$SCRIPT_DIR/GUIDELINES.md" "$OPENCODE_DIR/GUIDELINES.md"
     fi
 
-    echo -e "${GREEN}✓ 10 agents copied to ~/.config/opencode/agent/${NC}"
+    AGENT_COUNT=$(ls -1 "$SCRIPT_DIR"/agents/*.md 2>/dev/null | wc -l)
+    echo -e "${GREEN}✓ $AGENT_COUNT agents copied to ~/.config/opencode/agent/${NC}"
     echo ""
     echo -e "${BLUE}── Updating opencode.json ──${NC}"
     merge_json
@@ -108,7 +109,8 @@ install_skills() {
     echo ""
     echo -e "${BLUE}── Installing skills ──${NC}"
     cp -r "$SCRIPT_DIR"/skills/* "$OPENCODE_DIR/skills/"
-    echo -e "${GREEN}✓ 10 skills copied to ~/.config/opencode/skills/${NC}"
+    SKILL_COUNT=$(ls -1d "$SCRIPT_DIR"/skills/*/ 2>/dev/null | wc -l)
+    echo -e "${GREEN}✓ $SKILL_COUNT skills copied to ~/.config/opencode/skills/${NC}"
 }
 
 # ══════════════════════════
